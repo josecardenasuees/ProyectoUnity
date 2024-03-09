@@ -1147,7 +1147,6 @@ GameObject:
   - component: {fileID: 889195352}
   - component: {fileID: 889195351}
   - component: {fileID: 889195350}
-  - component: {fileID: 889195353}
   m_Layer: 0
   m_Name: ZonadeMuerte
   m_TagString: DeathZone
@@ -1267,22 +1266,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 519420032}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &889195353
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 889195349}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d4ed6d3cc47da3649b512078f0420a64, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemPrefab:
-  - {fileID: 889195349}
-  minTime: 1
-  maxTime: 2
 --- !u!1001 &1006432329
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1298,6 +1281,10 @@ PrefabInstance:
     - target: {fileID: 1296593495375591055, guid: 542f50e419d3c6146a13cca484da2e62, type: 3}
       propertyPath: m_TagString
       value: ItemBad
+      objectReference: {fileID: 0}
+    - target: {fileID: 1296593495375591055, guid: 542f50e419d3c6146a13cca484da2e62, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7250423107364283644, guid: 542f50e419d3c6146a13cca484da2e62, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1355,7 +1342,6 @@ GameObject:
   - component: {fileID: 1014100849}
   - component: {fileID: 1014100848}
   - component: {fileID: 1014100847}
-  - component: {fileID: 1014100850}
   m_Layer: 0
   m_Name: ZonadeMuerteArriba
   m_TagString: DeathZone
@@ -1475,22 +1461,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 519420032}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1014100850
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1014100846}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d4ed6d3cc47da3649b512078f0420a64, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemPrefab:
-  - {fileID: 1014100846}
-  minTime: 1
-  maxTime: 2
 --- !u!1 &1295869431
 GameObject:
   m_ObjectHideFlags: 0
@@ -1958,6 +1928,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: moneda 1
       objectReference: {fileID: 0}
+    - target: {fileID: 329187382729061880, guid: b57975e7e352be5458e95169ec4b2527, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5547488409787457173, guid: b57975e7e352be5458e95169ec4b2527, type: 3}
       propertyPath: m_LocalPosition.x
       value: -5.54695
@@ -2018,7 +1992,7 @@ GameObject:
   - component: {fileID: 1813816954}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

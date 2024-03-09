@@ -51,7 +51,7 @@ public class PlayerController : MonoBehaviour
 		StartCoroutine(WalkCoRutine());
 	}
 
-	void OnTriggerEvent2D(Collider2D collision)
+	void OnTriggerEnter2D(Collider2D collision)
 	{
 		if (collision.CompareTag("ItemGood"))
 		{
