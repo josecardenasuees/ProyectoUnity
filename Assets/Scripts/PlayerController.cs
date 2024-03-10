@@ -1,6 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.PackageManager.UI;
+//using UnityEditor.PackageManager.UI;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -60,7 +60,7 @@ public class PlayerController : MonoBehaviour
 		}
 		else if (collision.CompareTag("ItemBad"))
 		{
-			Destroy(collision.gameObject);
+			//Destroy(collision.gameObject);
 			PlayerDeath();
 		}
 		else if (collision.CompareTag("DeathZone"))

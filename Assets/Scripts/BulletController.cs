@@ -24,11 +24,11 @@ public class BulletCntroller : MonoBehaviour
     {
         if (collision.CompareTag("ItemGood"))
         {
+            //myGameManager.AddScore();
             Destroy(collision.gameObject);
         }
         else if (collision.CompareTag("ItemBad"))
         {
-            myGameManager.AddScore();
             Destroy(collision.gameObject);
         }
     }
